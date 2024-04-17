@@ -1,0 +1,22 @@
+.title{
+    grid-area: title;
+}
+
+.card{
+    grid-area: card;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'title title'
+    'card card'
+    'footer footer';
+    gap: 10px;
+    grid-template-rows: 20% 50% auto;
+}
