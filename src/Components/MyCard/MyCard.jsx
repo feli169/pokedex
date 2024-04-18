@@ -10,9 +10,8 @@ const MyCard = (poke) => {
 
     const id = innerPoke.id
     const pokeid =id.toString();
-    const idPokemon =pokeid.length ===1 ? "00" + pokeid :   pokeid.length===2?"0"+ pokeid :  pokeid ; pokeid;
-
-
+    const idPokemon =pokeid.length ===1 ? "00" + pokeid :  
+     pokeid.length===2?"0"+ pokeid :  pokeid ; pokeid;
 
     const Sprites = innerPoke.sprites.other;
     const offArt = Sprites['official-artwork'].front_default;

@@ -1,3 +1,4 @@
+
 const AsideBar = ({handleTypeChange}) => {
 
     const handleFilterClick = (type) => {
@@ -5,10 +6,11 @@ const AsideBar = ({handleTypeChange}) => {
       };
         return (
 
+// handleFilterCLick encargado de hacer el filtro  por tipo. la props handleType change es
+//  para que se actualice en App y pueda filtra solo el tipo seleccionado
 
-
-    <div >
-      <ul className="nav-list d-flex flex-wrap gap-2 ">
+    <div className="text-center">
+        <ul className="nav-list d-flex flex-wrap gap-2 ">
                 <li> <button className="btn" onClick={() => handleFilterClick(null)} id="ver-todos">Ver todos</button></li> 
                 <li ><button className="btn" onClick={() => handleFilterClick('normal')} id="normal">Normal</button></li>
                 <li ><button className="btn" onClick={() => handleFilterClick('fire')} id="fire">Fire</button></li>

@@ -6,8 +6,8 @@ const Grilla = ({ pokes, selectedType }) => {
     let filteredPokes = pokes;
 
     if (selectedType) {
-        filteredPokes = pokes.filter((poke) => {
-         return poke.types.some((typeObj) => typeObj.type.name === selectedType);
+        filteredPokes = pokes.filter((poke) => {  //poke es el array de objeto
+         return poke.types.some((typeObj) => typeObj.type.name === selectedType);//tipo de poke seleccionado
         });
     }
 
